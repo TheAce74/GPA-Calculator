@@ -1,0 +1,82 @@
+body {
+    font-size: 15pt;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: fantasy, monospace;
+    background-color: #333333;
+    color: #cd7941;
+}
+
+input, select, button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+  font-weight: 500;
+}
+
+input::placeholder {
+  color: rgba(205, 121, 65, .53);
+}
+
+#screen {
+  width: 80%;
+  margin: 20px 10%;
+  text-align: right;
+  font-size: 1.7em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin-top: 0px;
+  gap: 10px;
+  width: 90%;
+  margin: 0 5%;
+}
+
+h1 {
+  margin-top: 0px;
+  font-size: 1em;
+}
+
+.card {
+  box-shadow: 0px 4px 8px #111, 0px 6px 20px #333;
+  border-radius: 4px;
+  height: 1.5em;
+  padding-left:10px;
+  padding-top: 7px;
+  animation: show .7s ease-in;
+}
+
+@keyframes show {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+.card:active {
+  transform: scale(.9);
+}
+
+.more {
+  margin-top: 50px;
+  position: relative;
+  left: 42.5vw;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  border-radius: 50%;
+  margin-bottom: 300px;
+}
+
+.course {
+  text-transform: uppercase;
+}
+
+.course::placeholder {
+  text-transform: capitalize;
+}
