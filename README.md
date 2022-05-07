@@ -1,2 +1,3 @@
-# GPA-Calculator-
+# GPA_Calculator
 GPA Calculator 👨‍💻👌
+
