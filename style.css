@@ -1,14 +1,17 @@
 body {
-    font-size: 15pt;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: fantasy, monospace;
-    background-color: #333333;
-    color: #cd7941;
+  font-size: 15pt;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: fantasy, monospace;
+  background-color: #333333;
+  color: #cd7941;
+  overflow-x: hidden;
 }
 
-input, select, button {
+input,
+select,
+button {
   background-color: inherit;
   color: inherit;
   border: none;
@@ -19,7 +22,7 @@ input, select, button {
 }
 
 input::placeholder {
-  color: rgba(205, 121, 65, .53);
+  color: rgba(205, 121, 65, 0.53);
 }
 
 #screen {
@@ -47,30 +50,45 @@ h1 {
   box-shadow: 0px 4px 8px #111, 0px 6px 20px #333;
   border-radius: 4px;
   height: 1.5em;
-  padding-left:10px;
+  padding-left: 10px;
   padding-top: 7px;
-  animation: show .7s ease-in;
+  animation: show 0.7s ease-in;
 }
 
 @keyframes show {
-  from{opacity: 0}
-  to{opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card:hover,
+.card:focus-visible {
+  outline: 1px solid rgba(205, 121, 65, 0.53);
 }
 
 .card:active {
-  transform: scale(.9);
+  transform: scale(0.9);
+}
+
+[data-center="button"] {
+  position: relative;
 }
 
 .more {
   margin-top: 50px;
-  position: relative;
-  left: 42.5vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 2em;
   width: 50px;
   height: 50px;
   padding: 0px;
   border-radius: 50%;
   margin-bottom: 300px;
+  cursor: pointer;
 }
 
 .course {

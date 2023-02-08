@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -7,38 +8,42 @@
   <title>GPA Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <input type="text" name="screen" id="screen" placeholder="GPA" disabled>
   <div class="grid">
     <h1>Course</h1>
     <h1>Unit</h1>
     <h1>Grade</h1>
-  <div class="card">
-    <input type="text" name="course" class="course" placeholder="Enter Course">
+    <div class="card">
+      <input type="text" name="course" class="course" placeholder="Enter Course">
+    </div>
+    <div class="card">
+      <select name="credit" class="credit">
+        <option value="selectCredit" disabled selected>Credit</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    <div class="card">
+      <select name="grade" class="grade">
+        <option value="selectGrade" disabled selected>Grade</option>
+        <option value="5">A</option>
+        <option value="4">B</option>
+        <option value="3">C</option>
+        <option value="2">D</option>
+        <option value="1">E</option>
+        <option value="0">F</option>
+      </select>
+    </div>
   </div>
-  <div class="card">
-    <select name="credit" class="credit">
-      <option value="selectCredit" disabled selected>Credit</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
+
+  <div data-center="button">
+    <button class="more card">+</button>
   </div>
-  <div class="card">
-    <select name="grade" class="grade">
-      <option value="selectGrade" disabled selected>Grade</option>
-      <option value="5">A</option>
-      <option value="4">B</option>
-      <option value="3">C</option>
-      <option value="2">D</option>
-      <option value="1">E</option>
-      <option value="0">F</option>
-    </select>
-  </div>
-  </div>
-  
-  <button class="more card">+</button>
   <script src="main.js" defer></script>
 </body>
+
 </html>
